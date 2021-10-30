@@ -1,0 +1,1 @@
+from .reservationViews import ReservationCreateView,ReservationListView,ReservationDetailView,ReservationUpdateView,ReservationDeleteView

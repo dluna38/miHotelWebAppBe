@@ -1,11 +1,5 @@
-from django.conf import settings
-from django.http import response
-from django.views import View
-from django.urls import reverse
-from django.shortcuts import get_object_or_404, redirect
 from rest_framework import status, views,generics
 from rest_framework.response import Response
-from rest_framework_simplejwt.backends import TokenBackend
 from rooms.models.rooms import Rooms
 from rooms.serializers.roomsSerializer import RoomsSerializer
 from rest_framework.permissions import IsAuthenticated

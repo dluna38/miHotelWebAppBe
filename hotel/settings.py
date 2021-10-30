@@ -39,11 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'djmoney',
     'rest_framework',
-    'rooms',
     'corsheaders',
+    'rooms',
+    'guest',
+    'reservation',
 ]
 
 SIMPLE_JWT = {
@@ -112,12 +113,8 @@ WSGI_APPLICATION = 'hotel.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd32g5rvhf12k2t',
-        'USER': 'dyxsianruijdts',
-        'PASSWORD': '0a1df17af7ae1b43cc50a6a02dbaff50d0b69dd1843d4c4ab0639b84e7202e85',
-        'HOST': 'ec2-3-226-165-74.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'sqlite3.db',
     }
 }
 
@@ -146,7 +143,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 
